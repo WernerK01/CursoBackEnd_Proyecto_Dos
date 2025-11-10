@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "353b1a51-27cc-4831-a76d-33326bee84ef",
+		"name": "BackEnd_Two",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49308652",
+		"_collection_link": "https://wernerk01-157983.postman.co/workspace/Werner-Koll's-Workspace~ac8569b1-2e41-4231-8c25-145b381eda4a/collection/49308652-353b1a51-27cc-4831-a76d-33326bee84ef?action=share&source=collection_link&creator=49308652"
+	},
+	"item": [
+		{
+			"name": "Sessions",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Katy\",\r\n    \"last_name\": \"Perry\",\r\n    \"email\": \"katy_perry@example.com\",\r\n    \"password\": \"katy123\",\r\n    \"age\": 30\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/sessions/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"sessions",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "current",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTEwMjIzNzUwNTg4MmQ3Yzc5Y2NkN2IiLCJmaXJzdF9uYW1lIjoiS2F0eSIsImxhc3RfbmFtZSI6IlBlcnJ5IiwiZW1haWwiOiJrYXR5X3BlcnJ5QGV4YW1wbGUuY29tIiwiYWdlIjozMCwicm9sZSI6InVzZXIiLCJjcmVhdGVkQXQiOiIyMDI1LTExLTA5VDA1OjEwOjE1LjYzNFoiLCJ1cGRhdGVkQXQiOiIyMDI1LTExLTA5VDA1OjEwOjE1LjYzNFoiLCJfX3YiOjAsImlhdCI6MTc2MjczODQzNCwiZXhwIjoxNzYyODI0ODM0fQ.FAAY8hgJ-VQ9z1IOi8d0C190WbSlv9ro5dLw-Xj9vVo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/sessions/current",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"sessions",
+								"current"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"katy_perry@example.com\",\r\n    \"password\": \"katy123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/sessions/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"sessions",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
