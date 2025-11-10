@@ -1,5 +1,8 @@
 ## BackEnd Dos :: Login
 
+En este proyecto podrás encontrar un sistema de login y register completamente funcional. 
+Así como también esta añadido un sistema de tokens y autentificaciones hechas con JWT.
+
 ---
 
 1. Se creó un modelo con MongoDB donde se podrán encontrar todos los datos válidos para un usuario dentro de nuestra web:
