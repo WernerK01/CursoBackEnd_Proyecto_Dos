@@ -1,0 +1,25 @@
+{
+  "name": "entregable_uno",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch ./src/index.js",
+    "start": "node ./src/index.js"
+  },
+  "keywords": [],
+  "author": "Werner Koll",
+  "license": "ISC",
+  "description": "Proyecto de pruebas para login de usuarios y más...",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "connect-mongo": "^5.1.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.3",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1"
+  }
+}
